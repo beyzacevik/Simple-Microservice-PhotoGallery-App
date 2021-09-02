@@ -5,6 +5,7 @@ import com.example.optiimsample.repository.PhotoRepository;
 import org.bson.BsonBinarySubType;
 import org.bson.types.Binary;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -18,7 +19,6 @@ public class PhotoService {
     @Autowired
     private PhotoRepository photoRepo;
 
-    @Autowired
     public String addPhoto(String title, MultipartFile file) throws IOException{
 
         Photo photo = new Photo(title);

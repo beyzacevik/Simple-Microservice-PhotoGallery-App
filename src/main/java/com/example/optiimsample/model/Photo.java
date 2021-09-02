@@ -16,12 +16,10 @@ import org.springframework.stereotype.Component;
 @Setter
 @Getter
 public class Photo {
-
     @Id
     private String id;
     @NonNull
     private String title;
     private Binary image;
-
 
 }

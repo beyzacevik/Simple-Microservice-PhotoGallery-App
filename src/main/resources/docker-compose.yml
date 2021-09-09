@@ -1,9 +1,8 @@
 version: '3.7'
 services:
-  mongo:
-    image: mongo
+  mongodb_container:
+    image: mongo:latest
     ports:
       - 27017:27017
-    command: --serviceExecutor adaptive
     stdin_open: true
     tty: true
